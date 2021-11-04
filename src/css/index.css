@@ -83,6 +83,25 @@ header .logo {
     color: rgb(168, 161, 161)
 }
 
+header .logo::after {
+    position: absolute;
+    content: '';
+    left: 110px;
+    bottom: 1px;
+    height: 2px;
+    top: 49px;
+    width: 9%;
+    background: #f66;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+header .logo:hover::after {
+    bottom: 8px;
+    color: #f66;
+    opacity: 1;
+}
+
 header .logo span {
     color: #f66;
 }
@@ -317,12 +336,17 @@ header label {
     border-radius: .5rem;
 }
 
+.review:hover {
+    transform: scale(1.1);
+}
+
 .review .box-container .box .fa-quote-right{
     position: absolute;
     top:1rem; right:2rem;
     font-size: 8rem;
     color:var(--pink);
     opacity: .3;
+    transition: all .3s linear;
 }
 
 .review .box-container .box .user img{
@@ -331,6 +355,7 @@ header label {
     height: 7rem;
     width:7rem;
     margin-top: 2rem;
+    transition: all .3s linear;
 }
 
 .review .box-container .box .user h3{

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+
+*::selection {
+    background: #c5c3c3;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #ffffff;
+}
+
+section {
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: #f66;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .3s linear;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* NAVBAR */
+
+.heading{
+    text-align: center;
+    background: #333;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+    padding-top: 80px;
+}
+
+.heading span {
+    color: #f66;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0,.1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2rem;
+    color: rgb(168, 161, 161)
+}
+
+header .logo::after {
+    position: absolute;
+    content: '';
+    left: 110px;
+    bottom: 1px;
+    height: 2px;
+    top: 49px;
+    width: 9%;
+    background: #f66;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+header .logo:hover::after {
+    bottom: 8px;
+    color: #f66;
+    opacity: 1;
+}
+
+header .logo span {
+    color: #f66;
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: rgb(168, 161, 161);
+}
+
+header .navbar a:hover {
+    color: rgb(99, 91, 91) ;
+}
+
+header input {
+    display: none;
+}
+
+header label {
+    font-size: 3rem;
+    color: bisque;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* FIM NAV BAR */
+
+
+/* COMEÇO INTRO  */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .image img{
+    width: 30vw;
+    animation: float 3s linear infinite;
+}
+
+
+.home .content h3 {
+    font-size: 5.5rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.home .content h3 span {
+    color: #f66;
+    text-transform: uppercase;
+}
+
+.home .content p {
+    font-size: 1.7rem;
+    color:  #333;
+    padding: 1rem 0;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* FIM DA INTRO */
+
+.text1 {
+    text-align: center;
+    background: #333;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+    padding-top: 80px;
+}
+
+.text1 span {
+    color: #f66;
+}
+
+.text2 span {
+    color: #f66;
+}
+
+.formula h2 {
+    padding-top: 16px;
+    color: rgb(255, 166, 0);
+}
+
+.text2 {
+    text-align: center;
+    background: #333;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+    padding-top: 80px;
+}
