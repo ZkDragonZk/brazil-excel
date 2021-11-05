@@ -49,6 +49,9 @@ section {
     transform: scale(1.1);
 }
 
+.test {
+    color: #f66;
+}
 
 /* NAVBAR */
 
@@ -150,7 +153,6 @@ header label {
     animation: float 3s linear infinite;
 }
 
-
 .home .content h3 {
     font-size: 5.5rem;
     color: #333;
@@ -204,7 +206,17 @@ header label {
 
 .formula h2 {
     padding-top: 16px;
-    color: rgb(255, 166, 0);
+    color: rgb(41, 40, 51);
+}
+
+.formula .one {
+    color: #f66;
+    font-size: 2.5rem;
+}
+
+.formula img {
+    padding-top: 25px;
+    padding-left: 295px;
 }
 
 .text2 {
@@ -217,4 +229,89 @@ header label {
     text-transform: uppercase;
     padding:1rem;
     padding-top: 80px;
+}
+
+.test .ltn {
+    justify-content: center;
+}
+
+.excel-logo .img {
+    font-size: 10px;
+}
+
+
+/* footer */
+
+.footer{
+    padding-top: 3rem;
+    background: #f66;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+    flex:1 1 25rem;
+    margin:2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding:1rem 0;
+    color:#fff;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    color:#eee;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    color:#eee;
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+.footer .box-container .box .info{
+    display: flex;
+    align-items: center;
+}
+
+.footer .box-container .box .info i{
+    margin:.5rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background:#fff;
+    color:var(--pink);
+    font-size: 1.5rem;
+    height:4.5rem;
+    width:4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+.footer .credit{
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color:#fff;
+    border-top: .1rem solid #fff5;
+    padding:2.5rem 1rem;
+    text-align: center;
+}
+
+.staff {
+    padding-bottom: 10px;
 }
