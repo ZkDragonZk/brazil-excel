@@ -135,39 +135,52 @@ header label {
     opacity: 0;
 }
 
-/* FIM NAV BAR */
+.about{
+    background:url(../images/about-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+}
 
-
-/* COMEÇO INTRO  */
-
-.home {
+.about .column{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: cover;
-    background-position: center;
+    flex-wrap: wrap;
 }
 
-.home .image img{
-    width: 30vw;
-    animation: float 3s linear infinite;
+.about .column .image{
+    flex:1 1 40rem;
 }
 
-.home .content h3 {
-    font-size: 5.5rem;
-    color: #333;
-    text-transform: uppercase;
+.about .column .image img{
+    width:100%;
 }
 
-.home .content h3 span {
-    color: #f66;
-    text-transform: uppercase;
+.about .column .content{
+    flex:1 1 40rem;
 }
 
-.home .content p {
-    font-size: 1.7rem;
-    color:  #333;
-    padding: 1rem 0;
+.about .column .content h3{
+    font-size: 3rem;
+    color:#666;
+}
+
+.about .column .content p{
+    font-size: 1.5rem;
+    color:#666;
+    padding:1rem 0;
+}
+
+.about .column .content .buttons a:last-child{
+    margin-left: 2rem;
+}
+
+img {
+    padding-bottom: 25px;
+    max-width: 100%;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -181,66 +194,6 @@ header label {
         transform: translateY(0px);
     }
 }
-
-/* FIM DA INTRO */
-
-.text1 {
-    text-align: center;
-    background: #333;
-    color:transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    padding:1rem;
-    padding-top: 80px;
-}
-
-.text1 span {
-    color: #f66;
-}
-
-.text2 span {
-    color: #f66;
-}
-
-.formula h2 {
-    padding-top: 16px;
-    color: rgb(41, 40, 51);
-}
-
-.formula .one {
-    color: #f66;
-    font-size: 2.5rem;
-}
-
-.formula img {
-    padding-top: 25px;
-    padding-left: 295px;
-}
-
-.text2 {
-    text-align: center;
-    background: #333;
-    color:transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    padding:1rem;
-    padding-top: 80px;
-}
-
-.test .ltn {
-    justify-content: center;
-}
-
-.excel-logo .img {
-    font-size: 10px;
-}
-
-
-/* footer */
 
 .footer{
     padding-top: 3rem;
@@ -320,10 +273,7 @@ header label {
     padding-bottom: 10px;
 }
 
-/* Responsive */
-
-/* navbar */
-
+    
 @media (max-width:1200px){
     
     html{
