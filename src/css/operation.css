@@ -169,6 +169,19 @@ header .follow a:hover{
     padding-top: 15px;
     font-size: 1.5rem;
 }
+
+.text2 {
+    font-size: 2.8rem;
+    padding-top: 20px;
+    color: #000000;
+}
+
+.text3 {
+    font-size: 2.8rem;
+    padding-top: 20px;
+    color: #f66;
+}
+
 .Aritméticos img {
     padding-left: 259px;
     padding-top: 35px;
